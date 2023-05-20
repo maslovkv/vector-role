@@ -1,6 +1,6 @@
 ---
 - name: Restart Vector
-  become: true
+  become: "{{ 'false' if ansible_user_uid == 0 else 'true' }}"
   ansible.builtin.systemd:
     name: vector
     state: restarted
