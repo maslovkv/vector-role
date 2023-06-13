@@ -27,7 +27,7 @@
   - name: Validate Vector config
     ansible.builtin.command:
     become: "{{ 'false' if ansible_user_uid == 0 else 'true' }}"
-      cmd: "vector validate --no-environment --config-toml {{ vector_config }}"
+      - cmd: "vector validate --no-environment --config-toml {{ vector_config }}"
     changed_when: false
     failed_when: false
     register: vector_config
