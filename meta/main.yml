@@ -2,6 +2,8 @@ galaxy_info:
   author: Maslov Konstantin
   description: Install Vector fo EL
   company: HomeLab
+  role_name: vector-role
+  namespace: netology
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
